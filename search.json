@@ -39,56 +39,21 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "I’m Rupinder Kaur, an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I thrive in fast-paced environments where teamwork, process discipline, and great service matter.\n\n\nView Resume See Projects"
+    "text": "&lt;div class=\"landing-left\"&gt;\n  &lt;img src=\"assets/images/profile.jpg\" alt=\"Portrait of Rupinder Kaur\" class=\"avatar-xl\"/&gt;\n&lt;/div&gt;\n&lt;div class=\"landing-right\"&gt;\n  &lt;h1 class=\"display-4 fw-bold\"&gt;Rupinder Kaur&lt;/h1&gt;\n  &lt;h3 class=\"fw-semibold mb-2\"&gt;A Bit About Me&lt;/h3&gt;\n  &lt;p class=\"lead\"&gt;\n    I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.\n    I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.\n  &lt;/p&gt;\n  &lt;div class=\"bubble-links\"&gt;\n    &lt;a class=\"bubble bubble-green\"  href=\"resume.qmd\"&gt;Resume&lt;/a&gt;\n    &lt;a class=\"bubble bubble-orange\" href=\"projects.qmd\"&gt;Projects&lt;/a&gt;\n    &lt;a class=\"bubble bubble-blue\"   href=\"leadership.qmd\"&gt;Leadership&lt;/a&gt;\n    &lt;a class=\"bubble bubble-gray\"   href=\"skills.qmd\"&gt;Skills&lt;/a&gt;\n    &lt;a class=\"bubble bubble-gray\"   href=\"contact.qmd\"&gt;Contact&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "index.html#highlights",
-    "href": "index.html#highlights",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
     "title": "Home",
-    "section": "Highlights",
-    "text": "Highlights\n\nOpening Shift Lead trusted with checklist-based store open, food safety, and cash reconciliation.\nHands-on food handling & preparation, POS operation, and front-of-house leadership.\nCore strengths: customer service, problem solving, time management, and reliability.\n\n\nQuick Links\nResume Leadership Projects Skills"
-  },
-  {
-    "objectID": "appendix.html",
-    "href": "appendix.html",
-    "title": "Appendix",
-    "section": "",
-    "text": "Home (index.qmd)\n\nResume (resume.qmd) — PDF download\n\nProjects (projects.qmd) — includes Firehouse Subs leadership case\n\nSkills (skills.qmd)\n\nLeadership (leadership.qmd) — detailed narrative\n\nContact (contact.qmd)\n\nAppendix (appendix.qmd) — this page\n\n\n\n\n# Render and preview\nquarto render\nquarto preview\n\n# Git init & first push\ngit init\ngit add .\ngit commit -m \"Initial multi-page portfolio\"\ngit branch -M main\ngit remote add origin https://github.com/&lt;your-username&gt;/&lt;your-repo&gt;.git\ngit push -u origin main\n\n# GitHub Pages publish\nquarto publish gh-pages\n# or\nquarto use gh-pages && git commit -am \"Enable gh-pages\" && git push\n\n\n\n\nAlt text for images; meaningful link names\nHeading hierarchy; keyboard-focus visible\nColor contrast verified for buttons/links\nAll navbar links tested\n\n\n\n\n\nPrompted an LLM to propose site structure and first-draft copy.\n\nPersonalized all duties to match actual work at Firehouse Subs.\n\nRemoved any invented metrics or claims; ensured authenticity.\nStyling suggestions vetted for readability and accessibility."
-  },
-  {
-    "objectID": "appendix.html#a.-site-map",
-    "href": "appendix.html#a.-site-map",
-    "title": "Appendix",
-    "section": "",
-    "text": "Home (index.qmd)\n\nResume (resume.qmd) — PDF download\n\nProjects (projects.qmd) — includes Firehouse Subs leadership case\n\nSkills (skills.qmd)\n\nLeadership (leadership.qmd) — detailed narrative\n\nContact (contact.qmd)\n\nAppendix (appendix.qmd) — this page"
-  },
-  {
-    "objectID": "appendix.html#b.-authoring-publish-commands",
-    "href": "appendix.html#b.-authoring-publish-commands",
-    "title": "Appendix",
-    "section": "",
-    "text": "# Render and preview\nquarto render\nquarto preview\n\n# Git init & first push\ngit init\ngit add .\ngit commit -m \"Initial multi-page portfolio\"\ngit branch -M main\ngit remote add origin https://github.com/&lt;your-username&gt;/&lt;your-repo&gt;.git\ngit push -u origin main\n\n# GitHub Pages publish\nquarto publish gh-pages\n# or\nquarto use gh-pages && git commit -am \"Enable gh-pages\" && git push"
-  },
-  {
-    "objectID": "appendix.html#c.-accessibility-checks",
-    "href": "appendix.html#c.-accessibility-checks",
-    "title": "Appendix",
-    "section": "",
-    "text": "Alt text for images; meaningful link names\nHeading hierarchy; keyboard-focus visible\nColor contrast verified for buttons/links\nAll navbar links tested"
-  },
-  {
-    "objectID": "appendix.html#d.-llm-planning-trail-summary",
-    "href": "appendix.html#d.-llm-planning-trail-summary",
-    "title": "Appendix",
-    "section": "",
-    "text": "Prompted an LLM to propose site structure and first-draft copy.\n\nPersonalized all duties to match actual work at Firehouse Subs.\n\nRemoved any invented metrics or claims; ensured authenticity.\nStyling suggestions vetted for readability and accessibility."
+    "section": "Welcome",
+    "text": "Welcome\nUse the navigation or the round buttons above to explore my resume, projects, skills, leadership, and contact details."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Have an opportunity or feedback? I’d love to hear from you.\n\nEmail: rupinderkaursandhu05@gmail.com\n\nLinkedIn: (add your profile link here)\n\nEmail me"
+    "text": "Get in Touch\n\n\nI’m happy to connect about roles, teamwork opportunities, or feedback on this portfolio.\n\n\n\n\n&lt;div class=\"card-gradient p-4 h-100\"&gt;\n  &lt;h3 class=\"fw-semibold mb-3\"&gt;Email&lt;/h3&gt;\n  &lt;p&gt;&lt;a href=\"mailto:rupinderkaursandhu05@gmail.com\"&gt;rupinderkaursandhu05@gmail.com&lt;/a&gt;&lt;/p&gt;\n  &lt;a class=\"btn btn-gradient\" href=\"mailto:rupinderkaursandhu05@gmail.com?subject=Hello%20Rupinder\"&gt;Email Me&lt;/a&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"card-gradient p-4 h-100\"&gt;\n  &lt;h3 class=\"fw-semibold mb-3\"&gt;Resume&lt;/h3&gt;\n  &lt;p&gt;Prefer a PDF?&lt;/p&gt;\n  &lt;a class=\"btn btn-outline-dark\" href=\"assets/pdf/rupinder_kaur_resume.pdf\" target=\"_blank\" download&gt;Download Resume&lt;/a&gt;\n&lt;/div&gt;"
   },
   {
     "objectID": "leadership.html",
