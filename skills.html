@@ -24,8 +24,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -37,6 +40,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -51,85 +66,37 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/logo-rk.svg" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Rupinder Kaur — MBA Portfolio</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
-<span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./skills.html" aria-current="page"> 
-<span class="menu-text">Skills</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./leadership.html"> 
-<span class="menu-text">Leadership</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Contact</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<div class="site-nav">
-  <div class="site-nav-inner">
+<header class="circle-header">
+  <div class="inner">
     <div class="brand">
-      <div class="brand-badge">RK</div>
-      <div>Rupinder Kaur — MBA Portfolio</div>
+      <img src="assets/images/logo-rk.svg" alt="RK">
+      <span>Rupinder Kaur — MBA Portfolio</span>
     </div>
-    <nav class="circle-links" aria-label="Primary">
-      <a class="circle green" href="index.html">Home</a>
-      <a class="circle green" href="resume.html">Resume</a>
-      <a class="circle orange" href="projects.html">Projects</a>
-      <a class="circle blue" href="leadership.html">Leadership</a>
-      <a class="circle gray" href="skills.html">Skills</a>
-      <a class="circle gray" href="contact.html">Contact</a>
+    <nav class="circle-nav">
+      <a href="index.html" class="circle green">Home</a>
+      <a href="resume.html" class="circle green">Resume</a>
+      <a href="projects.html" class="circle orange">Projects</a>
+      <a href="leadership.html" class="circle blue">Leadership</a>
+      <a href="skills.html" class="circle gray">Skills</a>
+      <a href="contact.html" class="circle gray">Contact</a>
     </nav>
   </div>
-</div>
+</header>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -150,20 +117,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="page-content">
-<div class="section-card">
-<pre><code>&lt;h2&gt;Core Interpersonal&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Customer service, problem‑solving, teamwork, time management, reliability &amp; punctuality&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Operations &amp; Tools&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;POS systems, cash handling, prep &amp; presentation standards, sanitation &amp; labeling, checklist‑driven operations&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-</div>
-</div>
+<section id="core-interpersonal" class="level2">
+<h2 class="anchored" data-anchor-id="core-interpersonal">Core Interpersonal</h2>
+<ul>
+<li>Exceptional customer service, problem‑solving, teamwork, time management, reliability &amp; punctuality</li>
+</ul>
+</section>
+<section id="operations-tools" class="level2">
+<h2 class="anchored" data-anchor-id="operations-tools">Operations &amp; Tools</h2>
+<ul>
+<li>POS systems, cash handling, prep &amp; presentation standards, sanitation &amp; labeling, checklist‑driven operations</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -575,13 +542,12 @@ ul.task-list li input[type="checkbox"] {
 <p>©2025 Rupinder Kaur</p>
 </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>Built with Quarto</p>
+</div>
   </div>
 </footer>
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
