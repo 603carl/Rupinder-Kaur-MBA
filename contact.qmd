@@ -1,0 +1,27 @@
+---
+title: "Contact"
+---
+
+::: {.contact-hero}
+# Get in Touch {.fw-bold}
+I’m happy to connect about roles, teamwork opportunities, or feedback on this portfolio.
+:::
+
+::: {.row .g-4 .mt-1}
+::: {.col-md-6}
+::: {.card-gradient .p-4 .h-100}
+### Email {.fw-semibold .mb-3}
+[rupinderkaursandhu05@gmail.com](mailto:rupinderkaursandhu05@gmail.com)
+
+[Email Me](mailto:rupinderkaursandhu05@gmail.com?subject=Hello%20Rupinder){.btn .btn-gradient}
+:::
+:::
+::: {.col-md-6}
+::: {.card-gradient .p-4 .h-100}
+### Resume {.fw-semibold .mb-3}
+Prefer a PDF?
+
+[Download Resume](assets/pdf/rupinder_kaur_resume.pdf){target="_blank" download .btn .btn-outline-dark}
+:::
+:::
+:::

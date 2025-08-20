@@ -1,0 +1,27 @@
+---
+title: ""
+toc: false
+page-layout: full
+---
+
+::: {.landing}
+::: {.landing-grid}
+::: {.landing-left}
+![](assets/images/profile.jpg){.avatar-xl alt="Portrait of Rupinder Kaur"}
+:::
+::: {.landing-right}
+# Rupinder Kaur {.display-4 .fw-bold}
+### A Bit About Me {.fw-semibold .mb-2}
+I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.
+I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.
+
+<div class="bubble-links">
+[Resume](resume.qmd){.bubble .bubble-green}
+[Projects](projects.qmd){.bubble .bubble-orange}
+[Leadership](leadership.qmd){.bubble .bubble-blue}
+[Skills](skills.qmd){.bubble .bubble-gray}
+[Contact](contact.qmd){.bubble .bubble-gray}
+</div>
+:::
+:::
+:::
