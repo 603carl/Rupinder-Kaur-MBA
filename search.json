@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "submission/Appendix.html",
+    "href": "submission/Appendix.html",
+    "title": "Appendix — Full Version for Submission",
+    "section": "",
+    "text": "Appendix — Full Version for Submission\nThis file is the full appendix required by the assignment, including:\n\nA→Z Command Log\nLLM prompt/response drafts\nAnnotations showing personalization and authenticity checks\nRubric trace mapping requirements to implementation\n\nThis file is not built into the website but is included in the submission folder for direct upload."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Content for resume.qmd."
+  },
+  {
+    "objectID": "leadership.html",
+    "href": "leadership.html",
+    "title": "Leadership",
+    "section": "",
+    "text": "Content for leadership.qmd."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Content for contact.qmd."
+  },
+  {
+    "objectID": "appendix.html",
+    "href": "appendix.html",
+    "title": "Appendix",
+    "section": "",
+    "text": "Appendix (Website Page)\nThis appendix page provides details of the project structure, commands, and LLM drafting trail.\nSee the full submission copy of Appendix.md in the submission/ folder for grading."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome\nI’m Rupinder Kaur, an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.\nNavigate using the menu above to explore my resume, projects, skills, leadership, and appendix."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Content for projects.qmd."
+  },
+  {
+    "objectID": "skills.html",
+    "href": "skills.html",
+    "title": "Skills",
+    "section": "",
+    "text": "Content for skills.qmd."
+  }
+]
