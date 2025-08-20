@@ -1,62 +1,74 @@
-/* Hide default Quarto navbar */
+/* Hide the default Quarto navbar (we use a custom one) */
 .navbar { display: none !important; }
 
-/* Custom circle nav header */
-.circle-header {
-  position: sticky; top: 0; z-index: 1030;
-  background: rgba(255,255,255,.98);
-  backdrop-filter: blur(6px);
+:root { --nav-h: 74px; }
+
+/* Circle Navigation Bar */
+.circle-nav {
+  position: sticky; top: 0; z-index: 1000;
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0,0,0,.06);
-  box-shadow: 0 6px 16px rgba(0,0,0,.05);
 }
-.circle-header .inner {
-  max-width: 1100px; margin: 0 auto; padding: .6rem .75rem;
+.circle-nav .inner {
+  max-width: 1100px; margin: 0 auto; padding: .5rem 1rem;
   display: flex; align-items: center; justify-content: space-between;
+  gap: .75rem;
 }
-.brand { display: flex; align-items: center; gap: .6rem; font-weight: 800; color:#111; }
+.brand {
+  display: flex; align-items: center; gap: .6rem;
+  font-weight: 800;
+}
 .brand img { height: 28px; }
-.circle-nav { display: flex; gap: .7rem; align-items: center; }
+.brand .title { font-size: 1rem; color: #111827; }
+
+.nav-circles { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
 .circle {
-  width: 58px; height: 58px; border-radius: 999px;
+  width: 56px; height: 56px; border-radius: 999px;
   display: inline-flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: .8rem; text-decoration: none;
-  border: 1px solid rgba(0,0,0,.08);
-  box-shadow: 0 6px 12px rgba(0,0,0,.06);
-  color:#111;
+  font-weight: 700; font-size: .78rem; text-decoration: none; color: #111;
+  border: 1px solid rgba(0,0,0,.08); box-shadow: 0 6px 12px rgba(0,0,0,.06);
 }
-.circle.green  { background:#c0d97c; }
-.circle.orange { background:#f3b04d; }
-.circle.blue   { background:#b5e3ee; }
-.circle.gray   { background:#d3d4d6; }
+.c-green  { background:#c0d97c; }
+.c-orange { background:#f3b04d; }
+.c-blue   { background:#b5e3ee; }
+.c-gray   { background:#d3d4d6; }
 .circle:hover { transform: translateY(-1px); text-decoration: none; }
 
-/* Hero (image + about side by side) */
+/* Layout containers */
+.page-wrap { max-width: 1100px; margin: 0 auto; padding: 1.25rem 1rem 2rem; }
+
+/* Hero */
 .hero {
-  max-width: 1100px; margin: 1.25rem auto 1.25rem; padding: 0 .75rem;
-  display: grid; grid-template-columns: 260px 1fr; gap: 1.8rem; align-items: center;
+  display: grid; grid-template-columns: 260px 1fr; gap: 1.25rem; align-items: center;
+  margin-top: 1rem;
 }
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; text-align: center; }
 }
 .avatar {
   width: 240px; height: 240px; border-radius: 999px; object-fit: cover;
-  box-shadow: 0 12px 26px rgba(0,0,0,.12); border: 6px solid #eef2f7;
+  border: 6px solid #eef2f7; box-shadow: 0 12px 24px rgba(0,0,0,.12);
   margin: 0 auto;
 }
-.hero h1 { margin: 0 0 .4rem; font-size: clamp(1.6rem, 1.2vw + 1.1rem, 2rem); }
-.hero h3 { margin: 0 0 .35rem; font-size: 1rem; color: #374151; }
-.hero p  { margin: 0; font-size: 1rem; line-height: 1.6; }
+.hero h1 { margin: 0; font-size: clamp(1.6rem, 1.2vw + 1.1rem, 2rem); }
+.hero h3 { font-size: 1rem; color: #374151; margin-bottom: .35rem; }
+.hero p  { font-size: 1rem; line-height: 1.6; }
 
-/* Two-column section for Highlights + Quick Stats */
+/* Two columns for sections on home */
 .split-2 {
-  max-width: 1100px; margin: .25rem auto 1.5rem; padding: 0 .75rem;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: start;
+  margin-top: 1.25rem;
 }
-@media (max-width: 900px){
-  .split-2 { grid-template-columns: 1fr; }
-}
-.cardbox {
-  border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.2rem 1.3rem;
+@media (max-width: 900px) { .split-2 { grid-template-columns: 1fr; } }
+
+.card {
+  border: 1px solid #e5e7eb; border-radius: 1rem; padding: 1.1rem 1.2rem;
   box-shadow: 0 6px 18px rgba(0,0,0,.06);
 }
-.cardbox h2 { margin-top: 0; font-size: 1.25rem; }
+
+.rounded-xl { border-radius: 1rem; }
+.text-muted { color: #64748b; }
+
+/* General page heading spacing */
+.page-wrap h1 { margin-top: .75rem; }

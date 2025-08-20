@@ -66,6 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -81,22 +82,22 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<header class="circle-header">
+<div class="circle-nav">
   <div class="inner">
     <div class="brand">
       <img src="assets/images/logo-rk.svg" alt="RK">
-      <span>Rupinder Kaur — MBA Portfolio</span>
+      <span class="title">Rupinder Kaur — MBA Portfolio</span>
     </div>
-    <nav class="circle-nav">
-      <a href="index.html" class="circle green">Home</a>
-      <a href="resume.html" class="circle green">Resume</a>
-      <a href="projects.html" class="circle orange">Projects</a>
-      <a href="leadership.html" class="circle blue">Leadership</a>
-      <a href="skills.html" class="circle gray">Skills</a>
-      <a href="contact.html" class="circle gray">Contact</a>
+    <nav class="nav-circles" aria-label="Primary">
+      <a class="circle c-green" href="index.html">Home</a>
+      <a class="circle c-green" href="resume.html">Resume</a>
+      <a class="circle c-orange" href="projects.html">Projects</a>
+      <a class="circle c-blue" href="leadership.html">Leadership</a>
+      <a class="circle c-gray" href="skills.html">Skills</a>
+      <a class="circle c-gray" href="contact.html">Contact</a>
     </nav>
   </div>
-</header>
+</div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -117,18 +118,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="opening-shift-leadership-firehouse-subs-tsawwassen" class="level3">
+<section id="leadership" class="level1 page-wrap">
+<h1>Leadership</h1>
+<section id="opening-shift-leadership-firehouse-subs-tsawwassen" class="level3 card">
 <h3 class="anchored" data-anchor-id="opening-shift-leadership-firehouse-subs-tsawwassen">Opening Shift Leadership — Firehouse Subs, Tsawwassen</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://cdn.sanity.io/images/czqk28jt/prod_fhs_ca/6f50def84fcdd61fd71918d97c53881f9e2e098e-1014x542.jpg?w=897&amp;q=80&amp;fit=max&amp;auto=format" class="img-fluid figure-img" alt="Firehouse Subs leadership"></p>
-<figcaption>On‑shift leadership at Firehouse Subs</figcaption>
+<p><img src="https://cdn.sanity.io/images/czqk28jt/prod_fhs_ca/6f50def84fcdd61fd71918d97c53881f9e2e098e-1014x542.jpg?w=897&amp;q=80&amp;fit=max&amp;auto=format" class="rounded-xl img-fluid figure-img" alt="Firehouse Subs leadership"></p>
+<figcaption>On-shift leadership at Firehouse Subs</figcaption>
 </figure>
 </div>
 <p>I lead the <strong>opening shift</strong>, ensuring the store is guest‑ready and safe, with focus on <strong>process discipline</strong>, <strong>clear delegation</strong>, and a <strong>welcoming front‑of‑house</strong>.</p>
-
-
 </section>
+</section>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -548,4 +552,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
