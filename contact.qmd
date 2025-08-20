@@ -1,0 +1,12 @@
+---
+title: "Contact"
+---
+
+Have an opportunity or feedback? I’d love to hear from you.
+
+- **Email:** <rupinderkaursandhu05@gmail.com>  
+- **LinkedIn:** *(add your profile link here)*
+
+You can also open an email pre‑filled to me:
+
+[Email me](mailto:rupinderkaursandhu05@gmail.com?subject=Hello%20Rupinder%20—%20Portfolio%20Site&body=Hi%20Rupinder,){.btn .btn-gradient}

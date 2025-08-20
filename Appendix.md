@@ -1,0 +1,187 @@
+# Appendix — LLM Site Map, Drafts, and Command Log
+
+## A. Prompts & Model Drafts
+
+**Prompt A1 (Planning):**  
+“Use an LLM to brainstorm and outline a full MBA portfolio website with at least four pages (Home/About, Resume/CV, Projects/Case Studies, Skills & Certifications, Contact; optionally Leadership). Include brief bullet drafts for each.”
+
+**Model Draft A1 (Excerpt):**
+- **Home/About:** one‑paragraph intro, highlights, quick links buttons.
+- **Resume:** summary, experience bullets, education, skills, download link to PDF.
+- **Projects:** case cards with context → actions → outcomes; include Firehouse Subs leadership.
+- **Skills & Certifications:** grouped by interpersonal vs. operations/tools.
+- **Contact:** email, LinkedIn, mailto button.
+- **Leadership (optional):** deeper write‑up of opening‑shift leadership with the provided photo.
+
+**Edits Made:** Personalized tasks to match my real work; removed any invented metrics; added alt text and improved headings for accessibility; created a custom theme for visual polish.
+
+---
+
+## B. Section Drafts (Initial → Final)
+
+- **Projects/Leadership:** Kept the CAO structure (Context, Actions, Outcome). Final text replaced generic terms with concrete steps (temperature checks, FIFO labeling, POS ownership).
+
+- **Resume:** Converted duties into concise bullets and added a clear PDF download link.
+
+- **Home:** Added a friendly hero section with buttons for quick navigation.
+
+---
+
+## C. Quarto Commands & Git/GitHub Steps
+
+```bash
+# 1) Initialize project locally
+quarto create-project .
+quarto render      # build site locally
+quarto preview     # local preview at http://localhost:xxxx
+
+# 2) Initialize Git & push to GitHub
+git init
+git add .
+git commit -m "Initial multi-page portfolio"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git push -u origin main
+
+# 3) Publish to GitHub Pages (gh-pages branch)
+quarto publish gh-pages
+# or set up GitHub Actions for continuous deploy:
+quarto use gh-pages
+git commit -am "Enable gh-pages"
+git push
+```
+
+
+---
+
+## D. A→Z Command Log (Exact commands used)
+
+### D1. Environment & project
+```bash
+# Install Quarto (see https://quarto.org/docs/get-started/) 
+# Verify installation:
+quarto --version
+
+# Create/prepare project (ran in the unzipped folder)
+quarto create-project .         # confirm project type
+```
+
+### D2. Authoring pages
+```bash
+# Create section files (IDs used by navbar):
+# (Files already provided in the ZIP, these are the equivalents if re-creating)
+echo "" > index.qmd
+echo "" > resume.qmd
+echo "" > projects.qmd
+echo "" > skills.qmd
+echo "" > leadership.qmd
+echo "" > contact.qmd
+```
+
+### D3. Assets and styling
+```bash
+mkdir -p assets/images assets/pdf
+# Add logo and the resume PDF into assets/
+# Firehouse Subs photo is referenced from the CDN per instructions.
+```
+
+### D4. Render & preview
+```bash
+quarto render
+quarto preview           # local server for testing
+```
+
+### D5. Git & GitHub
+```bash
+git init
+git add .
+git commit -m "Initial multi-page MBA portfolio (Quarto)"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git push -u origin main
+```
+
+### D6. GitHub Pages deploy
+```bash
+# Option A: Direct publish to gh-pages branch
+quarto publish gh-pages
+
+# Option B: GitHub Action (continuous deploy on push)
+quarto use gh-pages
+git commit -am "Enable gh-pages action"
+git push
+```
+The public URL will be: `https://<your-username>.github.io/<your-repo>/`
+
+### D7. Link & accessibility checks performed
+- Confirmed every navbar item resolves to its `.qmd` page.
+- Resume link points to `assets/pdf/rupinder_kaur_resume.pdf` and downloads.
+- Leadership/Projects pages display the Firehouse Subs photo with **alt text**.
+- Verified color contrast and focus outline visibility on buttons/links.
+- Keyboard: tab-through order reaches navbar, buttons, and links.
+
+---
+
+## E. Full LLM Planning → Drafting → Personalization Trail
+
+Below are the **exact prompts** (abridged only for trivially repeated instructions) and **model responses** used to plan and scaffold the site. Each response was **reviewed and edited** to match real experience and course requirements.
+
+### E1. Prompt — Site Map & Sections
+> “Use an LLM to brainstorm and outline a full MBA portfolio website with at least four pages (Home/About, Resume/CV, Projects/Case Studies, Skills & Certifications, Contact; optionally Leadership). Include structured bullet drafts for each.”
+
+**Model Response (kept):**
+- Home/About: short intro, highlights, quick-link buttons.
+- Resume: experience, education, skills, PDF download.
+- Projects: CAO format (Context, Actions, Outcome); include Firehouse Subs leadership.
+- Skills: Interpersonal vs. Operations/Tools; certifications.
+- Contact: email, LinkedIn, mailto button.
+- Leadership (optional): deeper narrative + provided photo.
+
+**Edits applied:** Personalized bullets to real tasks, removed invented metrics, ensured alt text, created a gradient style and badges for visual polish.
+
+### E2. Prompt — Homepage hero & visual style
+> “Draft a concise homepage hero for an MBA student working as an opening shift lead; add quick links and suggest a modern but readable CSS style (buttons, cards, gradients).”
+
+**Model Response (used and adapted):**
+- Hero with headline + subtext, two CTAs (Resume, Projects).  
+- Soft gradient background, rounded cards, pill badges.  
+- *Edits:* Rewrote copy to reflect actual duties; ensured WCAG-friendly contrast and larger click targets.
+
+### E3. Prompt — Leadership CAO case
+> “Write a case entry using CAO format for leading the opening shift at a quick service restaurant.”
+
+**Model Response (used and adapted):**
+- Context: opening hour rush, strict SLAs.
+- Actions: checklist open, delegation by station, labeling FIFO, POS ownership, presentation standard.
+- Outcome: smoother open, fewer last-minute reworks, better guest flow.
+- *Edits:* Removed generic claims; kept discrete actions only.
+
+### E4. Prompt — Resume bullets
+> “Summarize duties for opening shift lead (food handling, sanitation, POS, cash handling, training).”
+
+**Model Response (used):** Converted into concise bullets; added education and a direct PDF download block.
+
+### E5. Prompt — Accessibility checklist
+> “List practical steps to make a simple Quarto site accessible for marking (alt text, headings, keyboard focus).”
+
+**Model Response (integrated):** Alt text, heading hierarchy, link names (no ‘click here’), color contrast, focus indicators.
+
+### E6. Prompt — GitHub Pages steps (Quarto)
+> “Give exact commands to publish a Quarto website to GitHub Pages.”
+
+**Model Response (kept verbatim in Section C & D):** `quarto render`, `quarto publish gh-pages`, and `quarto use gh-pages` flow.
+
+**Annotation:** All LLM text was **reviewed for authenticity** and updated to reflect real experience; any generic or invented figures were removed. The final text is personal and accurate.
+
+---
+
+## F. Rubric Trace (where each requirement is satisfied)
+
+- **Multi-page site with separate `.qmd` files:** `index.qmd`, `resume.qmd`, `projects.qmd`, `skills.qmd`, `leadership.qmd`, `contact.qmd`.
+- **Navigation configured:** `_quarto.yml` with right-aligned nav links; logo + brand on left.
+- **Visual elements:** Firehouse image; styled buttons/badges; alt text set.
+- **Resume download:** `assets/pdf/rupinder_kaur_resume.pdf` linked on Resume page.
+- **Reflection:** `Reflection.md` (300–500 words).
+- **Appendix with LLM drafts + commands:** this document (Sections A–F).
+- **Accessibility & usability:** checks noted above.
+

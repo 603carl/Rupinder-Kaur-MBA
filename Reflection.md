@@ -1,0 +1,9 @@
+# Reflection on Building My Multi‑Page Portfolio (LLM Use)
+
+As I expanded my single‑page portfolio into a multi‑page site, my use of large language models (LLMs) evolved from quick brainstorming to structured drafting and careful review. I began by asking the model to propose a site map tailored to an MBA portfolio—Home, Resume, Projects, Skills, Contact, and a dedicated Leadership page. The generated outline helped me scope content early and avoid duplicating information across pages.
+
+**What worked better as pages were added.** Separating content by audience need improved clarity. For example, keeping a concise, scannable Resume page while moving deeper narratives into Projects and Leadership allowed each page to have a clear job to do. A shared navigation bar and a consistent visual style (buttons, cards, soft gradients) made the experience feel cohesive. I also added a downloadable resume link so instructors could quickly verify information.
+
+**Ensuring authenticity and accuracy.** I limited LLM use to structure and wording, then filled the pages with my real tasks and responsibilities from Firehouse Subs and my MBA program. I avoided invented statistics and checked every statement against my actual experience. Where the model’s generic phrasing felt vague, I replaced it with concrete actions I perform on shift (checklist opens, labeling, POS handling, and presentation standards). I also wrote the Leadership reflection in my own voice and ensured alt text was present for accessibility.
+
+**Polishing and accessibility.** I used the model to suggest styling ideas, but I verified they remained readable with good color contrast and keyboard‑friendly navigation. I kept the tone professional and student‑appropriate, and I documented every Quarto command I ran so the build is reproducible. Overall, the LLM sped up planning and first drafts, while the final content remains accurate, personal, and aligned with course requirements.
