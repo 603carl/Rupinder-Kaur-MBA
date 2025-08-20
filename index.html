@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,18 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -87,7 +71,6 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Rupinder Kaur — MBA Portfolio</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -131,53 +114,60 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
-<div class="bubble-strip">
-  <a href="resume.html" class="bubble-sm bubble-green">Resume</a>
-  <a href="projects.html" class="bubble-sm bubble-orange">Projects</a>
-  <a href="leadership.html" class="bubble-sm bubble-blue">Leadership</a>
-  <a href="skills.html" class="bubble-sm bubble-gray">Skills</a>
-  <a href="contact.html" class="bubble-sm bubble-gray">Contact</a>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <div class="brand">
+      <div class="brand-badge">RK</div>
+      <div>Rupinder Kaur — MBA Portfolio</div>
+    </div>
+    <nav class="circle-links" aria-label="Primary">
+      <a class="circle green" href="index.html">Home</a>
+      <a class="circle green" href="resume.html">Resume</a>
+      <a class="circle orange" href="projects.html">Projects</a>
+      <a class="circle blue" href="leadership.html">Leadership</a>
+      <a class="circle gray" href="skills.html">Skills</a>
+      <a class="circle gray" href="contact.html">Contact</a>
+    </nav>
+  </div>
 </div>
 
 
 
 
-<div class="landing">
-<div class="landing-grid">
-<div class="landing-left">
-<p><img src="assets/images/profile.jpg" class="avatar-xl img-fluid" alt="Portrait of Rupinder Kaur"></p>
-</div>
-<section id="rupinder-kaur" class="level1 landing-right">
-<h1>Rupinder Kaur</h1>
-<section id="a-bit-about-me" class="level3">
-<h3 class="anchored" data-anchor-id="a-bit-about-me">A Bit About Me</h3>
-<p>I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.</p>
-</section>
-<section id="highlights" class="level2">
-<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
-<ul>
-<li>Opening shift lead: execute checklist-driven open, delegate prep, verify food safety &amp; labeling.</li>
-<li>Customer-first service: handle POS, resolve issues quickly, and support teammates under pressure.</li>
-<li>Reliable and punctual: consistent store readiness before the first lunch rush.</li>
-</ul>
-</section>
-<section id="quick-stats" class="level2">
-<h2 class="anchored" data-anchor-id="quick-stats">Quick Stats</h2>
-<ul>
-<li><strong>Location:</strong> Vancouver, BC<br>
-</li>
-<li><strong>Program:</strong> MBA at UCW<br>
-</li>
-<li><strong>Current role:</strong> Opening Shift Lead, Firehouse Subs (Tsawwassen)</li>
-</ul>
-</section>
-</section>
-</div>
+<div class="page-content">
+<section class="hero">
+<img src="assets/images/profile.jpg" alt="Rupinder Kaur" class="avatar">
+<div>
+<pre><code>  &lt;h1&gt;Rupinder Kaur&lt;/h1&gt;
+  &lt;h3 class="fw-semibold"&gt;A Bit About Me&lt;/h3&gt;
+  &lt;p&gt;I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I enjoy fast-paced teamwork, hospitality, and process‑driven operations that deliver a great guest experience.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div></section>
+<section class="split-2">
+<div class="section-card">
+<pre><code>  &lt;h2&gt;Highlights&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Opening shift lead: execute checklist‑driven open, delegate prep, verify food safety &amp; labeling.&lt;/li&gt;
+    &lt;li&gt;Customer‑first service: handle POS, resolve issues quickly, and support teammates under pressure.&lt;/li&gt;
+    &lt;li&gt;Reliable and punctual: consistent store readiness before the first lunch rush.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section-card"&gt;
+  &lt;h2&gt;Quick Stats&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Location:&lt;/strong&gt; Vancouver, BC&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Program:&lt;/strong&gt; MBA at UCW&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Current role:&lt;/strong&gt; Opening Shift Lead, Firehouse Subs (Tsawwassen)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div></section>
 </div>
 
 
+</main></div>
 
-</main> <!-- /main -->
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -577,7 +567,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -587,8 +577,8 @@ ul.task-list li input[type="checkbox"] {
 <p>©2025 Rupinder Kaur</p>
 </div>
     <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
+      &nbsp;
+    </div>
   </div>
 </footer>
 

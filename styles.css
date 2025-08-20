@@ -1,47 +1,65 @@
+/* Hide Quarto's default navbar so we only have one nav */
+.navbar { display:none !important; }
+
 :root {
   --brand-1:#6c63ff;
   --brand-2:#23c8ff;
+  --ink:#0f172a;
+  --muted:#6b7280;
 }
-.navbar-brand img { height: 28px; }
-.navbar .navbar-nav.ms-auto .nav-link { font-weight: 700; margin-left: .75rem; }
 
-/* Bubble navigation strip (appears under/near navbar on all pages) */
-.bubble-strip {
-  display:flex; gap:.6rem; justify-content:center; align-items:center;
-  padding:.55rem .5rem; background:rgba(255,255,255,.92); backdrop-filter: blur(6px);
-  border-bottom:1px solid rgba(0,0,0,.06);
-  position: sticky; top: 56px; z-index: 100;
+/* Custom top navigation with circular links */
+.site-nav {
+  position: sticky; top: 0; z-index: 999;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,.95);
+  border-bottom: 1px solid rgba(0,0,0,.06);
 }
-@media (max-width: 768px){
-  .bubble-strip { position: static; }
+.site-nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .6rem 1rem;
 }
-.bubble-sm {
-  width:64px; height:64px; border-radius:999px;
-  display:inline-flex; align-items:center; justify-content:center;
-  font-weight:700; font-size:.78rem; text-decoration:none;
+.brand {
+  display:flex; align-items:center; gap:.6rem; font-weight:800; color:var(--ink);
+}
+.brand-badge {
+  width:40px; height:40px; border-radius:10px;
+  background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+  color:white; display:flex; align-items:center; justify-content:center;
+  font-weight:800;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+.circle-links { display:flex; gap:.6rem; align-items:center; }
+.circle {
+  width:58px; height:58px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:.78rem; text-decoration:none; color:#111;
   border:1px solid rgba(0,0,0,.08); box-shadow:0 6px 12px rgba(0,0,0,.06);
 }
-.bubble-green  { background:#c0d97c; color:#111; }
-.bubble-orange { background:#f3b04d; color:#111; }
-.bubble-blue   { background:#b5e3ee; color:#111; }
-.bubble-gray   { background:#d3d4d6; color:#111; }
-.bubble-sm:hover{ transform: translateY(-1px); text-decoration:none; }
+.circle.green{ background:#c0d97c; }
+.circle.orange{ background:#f3b04d; }
+.circle.blue{ background:#b5e3ee; }
+.circle.gray{ background:#d3d4d6; }
+.circle:hover{ transform: translateY(-1px); text-decoration:none; }
 
-/* Home hero layout (compact, balanced) */
-.landing { padding: 1.25rem 0 2rem; }
-.landing-grid {
-  display:grid; grid-template-columns:220px 1fr; gap:1.6rem; align-items:center;
+/* Hero / about row */
+.page-content { max-width: 1100px; margin: 0 auto; padding: 1.2rem 1rem 2rem; }
+.hero {
+  display:grid; grid-template-columns: 260px 1fr; gap: 2rem; align-items:center;
+  margin-top: 1rem;
 }
-@media (max-width: 980px){ .landing-grid{ grid-template-columns:1fr; text-align:center; } }
-.avatar-xl { width:200px; height:200px; border-radius:999px; object-fit:cover;
-  box-shadow:0 12px 26px rgba(0,0,0,.12); border:6px solid #eef2f7; }
-.landing-right{ max-width: 60ch; }
-.landing-right h1{ font-size: clamp(1.6rem, 1.2vw + 1.1rem, 2rem); margin:0 0 .4rem 0; }
-.landing-right h3{ font-size:1rem; margin-bottom:.4rem; color:#374151; }
-.landing-right p{ font-size:1rem; line-height:1.6; }
+@media (max-width: 980px){ .hero{ grid-template-columns: 1fr; text-align:center; } }
+.avatar { width:230px; height:230px; border-radius:999px; object-fit:cover; border:6px solid #eef2f7;
+  box-shadow: 0 14px 28px rgba(0,0,0,.12);
+}
+.hero h1 { font-size: clamp(1.6rem, 1.2vw + 1.1rem, 2rem); margin-bottom:.4rem; }
+.hero p { font-size: 1rem; line-height: 1.6; color:#334155; }
 
-/* Cards */
-.card-gradient{ border:1px solid #e5e7eb; border-radius:1rem; box-shadow:0 6px 18px rgba(0,0,0,.06); padding:1.25rem; }
+/* Two-column section for highlights & quick stats */
+.split-2 { display:grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+@media (max-width: 980px){ .split-2{ grid-template-columns: 1fr; } }
+.section-card { border:1px solid #e5e7eb; border-radius:1rem; padding: 1.25rem 1.25rem; box-shadow:0 6px 18px rgba(0,0,0,.06); }
 
-/* Utility to hide default navbar on the home page only (added via page include) */
-.hide-navbar .navbar{ display:none !important; }
+/* General tweaks */
+h2 { font-weight:800; margin: .5rem 0 1rem; }
+footer, .footer { color: var(--muted); }

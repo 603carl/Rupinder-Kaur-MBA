@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,18 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -87,7 +71,6 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Rupinder Kaur — MBA Portfolio</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -131,12 +114,21 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<div class="bubble-strip">
-  <a href="resume.html" class="bubble-sm bubble-green">Resume</a>
-  <a href="projects.html" class="bubble-sm bubble-orange">Projects</a>
-  <a href="leadership.html" class="bubble-sm bubble-blue">Leadership</a>
-  <a href="skills.html" class="bubble-sm bubble-gray">Skills</a>
-  <a href="contact.html" class="bubble-sm bubble-gray">Contact</a>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <div class="brand">
+      <div class="brand-badge">RK</div>
+      <div>Rupinder Kaur — MBA Portfolio</div>
+    </div>
+    <nav class="circle-links" aria-label="Primary">
+      <a class="circle green" href="index.html">Home</a>
+      <a class="circle green" href="resume.html">Resume</a>
+      <a class="circle orange" href="projects.html">Projects</a>
+      <a class="circle blue" href="leadership.html">Leadership</a>
+      <a class="circle gray" href="skills.html">Skills</a>
+      <a class="circle gray" href="contact.html">Contact</a>
+    </nav>
+  </div>
 </div>
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -158,23 +150,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="card-gradient">
-<h3 class="fw-semibold mb-3 anchored">
-Email
-</h3>
-<p>
-<a href="mailto:rupinderkaursandhu05@gmail.com">rupinderkaursandhu05@gmail.com</a>
-</p>
-<p><a class="btn btn-primary" href="mailto:rupinderkaursandhu05@gmail.com?subject=Hello%20Rupinder">Email Me</a></p>
+<div class="page-content">
+<div class="section-card">
+<pre><code>&lt;h3 class="fw-semibold mb-3"&gt;Email&lt;/h3&gt;
+&lt;p&gt;&lt;a href="mailto:rupinderkaursandhu05@gmail.com"&gt;rupinderkaursandhu05@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;a class="btn btn-primary" href="mailto:rupinderkaursandhu05@gmail.com?subject=Hello%20Rupinder"&gt;Email Me&lt;/a&gt;</code></pre>
 </div>
-<div class="card-gradient mt-4">
-<h3 class="fw-semibold mb-3 anchored">
-Resume
-</h3>
-<p>
-Prefer a PDF?
-</p>
-<p><a class="btn btn-outline-dark" href="assets/pdf/rupinder_kaur_resume.pdf" target="_blank" download="">Download Resume</a></p>
+<div class="section-card" style="margin-top:1rem;">
+<pre><code>&lt;h3 class="fw-semibold mb-3"&gt;Resume&lt;/h3&gt;
+&lt;p&gt;Prefer a PDF?&lt;/p&gt;
+&lt;a class="btn btn-outline-dark" href="assets/pdf/rupinder_kaur_resume.pdf" target="_blank" download&gt;Download Resume&lt;/a&gt;</code></pre>
+</div>
 </div>
 
 
@@ -589,8 +575,8 @@ Prefer a PDF?
 <p>©2025 Rupinder Kaur</p>
 </div>
     <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
+      &nbsp;
+    </div>
   </div>
 </footer>
 
