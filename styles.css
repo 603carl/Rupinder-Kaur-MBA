@@ -42,3 +42,31 @@
 .bubble:hover, .bubble:focus { transform: translateY(-2px); text-decoration: none; }
 
 .card-gradient { border:1px solid #e5e7eb; border-radius:1rem; overflow:hidden; box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+
+
+/* v11: normalize home typography and add top bubble strip */
+.landing-right .display-4 { font-size: clamp(1.6rem, 1.4vw + 1.1rem, 2.1rem); }
+.landing-right h3 { font-size: 1.05rem; }
+.landing-right p { font-size: 1rem; line-height: 1.6; }
+
+/* Bubble strip near the top (under navbar) */
+.bubble-strip {
+  display: flex; gap: .6rem; justify-content: center; align-items: center;
+  padding: .6rem 0 .4rem; margin-bottom: .5rem;
+  position: sticky; top: 56px; z-index: 10;
+  background: rgba(255,255,255,.85); backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.bubble-sm {
+  width: 64px; height: 64px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 700; text-decoration: none; font-size: .78rem;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 6px 12px rgba(0,0,0,.06);
+}
+.bubble-sm:hover, .bubble-sm:focus { transform: translateY(-1px); text-decoration: none; }
+
+/* Keep earlier bubbles for hero (still available if you want them lower) */
+.bubble { width: 100px; height: 100px; font-size: .95rem; }
+.avatar-xl { width: 220px; height: 220px; }
+.landing-grid { grid-template-columns: 240px 1fr; gap: 1.6rem; }
