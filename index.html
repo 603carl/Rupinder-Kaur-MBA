@@ -25,10 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -40,18 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -81,55 +65,82 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
-<header class="site-header">
-  <div class="inner">
+<div class="site-header">
+  <div class="bar">
     <div class="brand">
-      <div class="badge">RK</div>
-      <div class="title">Rupinder Kaur — MBA Portfolio</div>
+      <div class="rk-badge">RK</div>
+      <div class="brand-title">Rupinder Kaur — MBA Portfolio</div>
     </div>
-    <nav class="circle-nav">
-      <a href="index.html" class="circle c-green" data-page="index.html">Home</a>
-      <a href="resume.html" class="circle c-green" data-page="resume.html">Resume</a>
-      <a href="projects.html" class="circle c-orange" data-page="projects.html">Projects</a>
-      <a href="leadership.html" class="circle c-blue" data-page="leadership.html">Leadership</a>
-      <a href="skills.html" class="circle c-gray" data-page="skills.html">Skills</a>
-      <a href="contact.html" class="circle c-gray" data-page="contact.html">Contact</a>
+    <nav class="nav-circles">
+      <a href="index.html" class="circle c-green" data-page="index">Home</a>
+      <a href="resume.html" class="circle c-green" data-page="resume">Resume</a>
+      <a href="projects.html" class="circle c-orange" data-page="projects">Projects</a>
+      <a href="leadership.html" class="circle c-blue" data-page="leadership">Leadership</a>
+      <a href="skills.html" class="circle c-gray" data-page="skills">Skills</a>
+      <a href="contact.html" class="circle c-gray" data-page="contact">Contact</a>
     </nav>
   </div>
-</header>
+</div>
 <script>
-  document.addEventListener('DOMContentLoaded', function(){
-    const path = location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.circle-nav .circle').forEach(a => {
-      if (a.dataset.page === path) a.classList.add('active');
-    });
+// set active circle based on current path
+(function(){
+  const page = location.pathname.split('/').pop().replace(/\.html$/, '') || 'index';
+  document.querySelectorAll('.nav-circles .circle').forEach(a=>{
+    if (a.getAttribute('data-page') === page) a.classList.add('active');
   });
+})();
 </script>
 
 
 
 
-<div class="page-content">
+<main class="content">
 <div class="hero">
+<img src="assets/images/profile.jpg" alt="Rupinder Kaur portrait" class="avatar-xl">
 <div>
-<img src="assets/images/profile.jpg" class="avatar img-fluid">
+<pre><code>&lt;h1&gt;Rupinder Kaur&lt;/h1&gt;
+&lt;h3&gt;A Bit About Me&lt;/h3&gt;
+&lt;p&gt;I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.
+I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.&lt;/p&gt;</code></pre>
 </div>
-<section id="rupinder-kaur" class="level1">
-<h1>Rupinder Kaur</h1>
-<section id="a-bit-about-me" class="level3">
-<h3 class="anchored" data-anchor-id="a-bit-about-me">A Bit About Me</h3>
-I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.
+</div>
+<div class="split-2">
+<section class="card">
+<h2 class="anchored">
+Highlights
+</h2>
+<ul>
+<li>
+Opening shift lead: execute checklist-driven open, delegate prep, verify food safety &amp; labeling.
+</li>
+<li>
+Customer-first service: handle POS, resolve issues quickly, and support teammates under pressure.
+</li>
+<li>
+Reliable &amp; punctual: consistent store readiness before the first lunch rush.
+</li>
+</ul>
 </section>
+<section class="card">
+<h2 class="anchored">
+Quick Stats
+</h2>
+<ul>
+<li>
+<strong>Location:</strong> Vancouver, BC
+</li>
+<li>
+<strong>Program:</strong> MBA at UCW
+</li>
+<li>
+<strong>Current role:</strong> Opening Shift Lead, Firehouse Subs (Tsawwassen)
+</li>
+</ul>
 </section>
 </div>
-<div class="grid-2" style="margin-top:1.2rem;">
-<div class="card">
-## Highlights - Opening shift lead: execute checklist-driven open, delegate prep, verify food safety &amp; labeling. - Customer-first service: handle POS, resolve issues quickly, and support teammates under pressure. - Reliable and punctual: consistent store readiness before the first lunch rush.
-</div>
-<div class="card">
-## Quick Stats - <strong>Location:</strong> Vancouver, BC - <strong>Program:</strong> MBA at UCW - <strong>Current role:</strong> Opening Shift Lead, Firehouse Subs (Tsawwassen)
-</div>
-</div>
+</main>
+<div class="page-footer">
+©2025 Rupinder Kaur
 </div>
 
 
@@ -535,19 +546,6 @@ I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Su
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>©2025 Rupinder Kaur</p>
-</div>
-    <div class="nav-footer-right">
-<p>Built with Quarto</p>
-</div>
-  </div>
-</footer>
 
 
 
