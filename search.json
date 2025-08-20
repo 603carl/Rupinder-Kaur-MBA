@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "&lt;div class=\"landing-left\"&gt;\n  &lt;img src=\"assets/images/profile.jpg\" alt=\"Portrait of Rupinder Kaur\" class=\"avatar-xl\"/&gt;\n&lt;/div&gt;\n&lt;div class=\"landing-right\"&gt;\n  &lt;h1 class=\"display-4 fw-bold\"&gt;Rupinder Kaur&lt;/h1&gt;\n  &lt;h3 class=\"fw-semibold mb-2\"&gt;A Bit About Me&lt;/h3&gt;\n  &lt;p class=\"lead\"&gt;\n    I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.\n    I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.\n  &lt;/p&gt;\n  &lt;div class=\"bubble-links\"&gt;\n    &lt;a class=\"bubble bubble-green\"  href=\"resume.qmd\"&gt;Resume&lt;/a&gt;\n    &lt;a class=\"bubble bubble-orange\" href=\"projects.qmd\"&gt;Projects&lt;/a&gt;\n    &lt;a class=\"bubble bubble-blue\"   href=\"leadership.qmd\"&gt;Leadership&lt;/a&gt;\n    &lt;a class=\"bubble bubble-gray\"   href=\"skills.qmd\"&gt;Skills&lt;/a&gt;\n    &lt;a class=\"bubble bubble-gray\"   href=\"contact.qmd\"&gt;Contact&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+    "text": "I am an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I enjoy fast-paced teamwork, hospitality, and process-driven operations that deliver a great guest experience.\n\nResume Projects Leadership Skills Contact"
   },
   {
     "objectID": "index.html#welcome",
@@ -53,7 +53,7 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Get in Touch\n\n\nI’m happy to connect about roles, teamwork opportunities, or feedback on this portfolio.\n\n\n\n\n&lt;div class=\"card-gradient p-4 h-100\"&gt;\n  &lt;h3 class=\"fw-semibold mb-3\"&gt;Email&lt;/h3&gt;\n  &lt;p&gt;&lt;a href=\"mailto:rupinderkaursandhu05@gmail.com\"&gt;rupinderkaursandhu05@gmail.com&lt;/a&gt;&lt;/p&gt;\n  &lt;a class=\"btn btn-gradient\" href=\"mailto:rupinderkaursandhu05@gmail.com?subject=Hello%20Rupinder\"&gt;Email Me&lt;/a&gt;\n&lt;/div&gt;\n\n\n&lt;div class=\"card-gradient p-4 h-100\"&gt;\n  &lt;h3 class=\"fw-semibold mb-3\"&gt;Resume&lt;/h3&gt;\n  &lt;p&gt;Prefer a PDF?&lt;/p&gt;\n  &lt;a class=\"btn btn-outline-dark\" href=\"assets/pdf/rupinder_kaur_resume.pdf\" target=\"_blank\" download&gt;Download Resume&lt;/a&gt;\n&lt;/div&gt;"
+    "text": "Get in Touch\nI’m happy to connect about roles, teamwork opportunities, or feedback on this portfolio.\n\n\n\n\nEmail\nrupinderkaursandhu05@gmail.com\nEmail Me\n\n\n\n\nResume\nPrefer a PDF?\nDownload Resume{target=“_blank” download .btn .btn-outline-dark}"
   },
   {
     "objectID": "leadership.html",
