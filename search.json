@@ -1,58 +1,128 @@
 [
   {
-    "objectID": "submission/Appendix.html",
-    "href": "submission/Appendix.html",
-    "title": "Appendix — Full Version for Submission",
+    "objectID": "skills.html",
+    "href": "skills.html",
+    "title": "Skills & Certifications",
     "section": "",
-    "text": "Appendix — Full Version for Submission\nThis file is the full appendix required by the assignment, including:\n\nA→Z Command Log\nLLM prompt/response drafts\nAnnotations showing personalization and authenticity checks\nRubric trace mapping requirements to implementation\n\nThis file is not built into the website but is included in the submission folder for direct upload."
+    "text": "Exceptional customer service\n\nProblem-solving and adaptability\n\nTeam collaboration and communication\n\nTime management\n\nReliability and punctuality"
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "skills.html#core-interpersonal",
+    "href": "skills.html#core-interpersonal",
+    "title": "Skills & Certifications",
     "section": "",
-    "text": "Content for resume.qmd."
+    "text": "Exceptional customer service\n\nProblem-solving and adaptability\n\nTeam collaboration and communication\n\nTime management\n\nReliability and punctuality"
   },
   {
-    "objectID": "leadership.html",
-    "href": "leadership.html",
-    "title": "Leadership",
-    "section": "",
-    "text": "Content for leadership.qmd."
+    "objectID": "skills.html#operations-tools",
+    "href": "skills.html#operations-tools",
+    "title": "Skills & Certifications",
+    "section": "Operations & Tools",
+    "text": "Operations & Tools\n\nPOS systems (order entry, payment, receipts)\n\nCash handling and reconciliation\n\nFood prep and presentation standards\n\nSanitation, labeling, and storage practices\n\nOpening/closing checklists and store readiness"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Content for contact.qmd."
+    "objectID": "skills.html#certifications-currenttarget",
+    "href": "skills.html#certifications-currenttarget",
+    "title": "Skills & Certifications",
+    "section": "Certifications (current/target)",
+    "text": "Certifications (current/target)\n\nFoodSafe Level 1 (if applicable)\n\nFirst Aid / CPR (if applicable)"
   },
   {
-    "objectID": "appendix.html",
-    "href": "appendix.html",
-    "title": "Appendix",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects & Case Studies",
     "section": "",
-    "text": "Appendix (Website Page)\nThis appendix page provides details of the project structure, commands, and LLM drafting trail.\nSee the full submission copy of Appendix.md in the submission/ folder for grading."
+    "text": "Leadership in Quick Service — Firehouse Subs (Tsawwassen)\n\n\n\nFirehouse Subs storefront\n\n\nContext. Busy suburban location with high lunchtime traffic and strict opening SLAs.\nRole. Opening shift lead coordinating prep, food safety checks, and first-hour throughput.\nActions. - Executed checklist-driven open: equipment warm-up, line setup, ingredient temperature checks. - Delegated prep by station; verified labeling and FIFO rotation. - Oversaw front counter & POS, resolved order issues, and supported new team members. - Ensured presentation consistency and store readiness before the first rush.\nOutcome. Reliable open, fewer last-minute reworks, and smoother guest flow during peak hour."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome\nI’m Rupinder Kaur, an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.\nNavigate using the menu above to explore my resume, projects, skills, leadership, and appendix."
+    "text": "I’m Rupinder Kaur, an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I thrive in fast-paced environments where teamwork, process discipline, and great service matter.\n\n\nView Resume See Projects"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Content for projects.qmd."
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Home",
+    "section": "Highlights",
+    "text": "Highlights\n\nOpening Shift Lead trusted with checklist-based store open, food safety, and cash reconciliation.\nHands-on food handling & preparation, POS operation, and front-of-house leadership.\nCore strengths: customer service, problem solving, time management, and reliability.\n\n\nQuick Links\nResume Leadership Projects Skills"
   },
   {
-    "objectID": "skills.html",
-    "href": "skills.html",
-    "title": "Skills",
+    "objectID": "appendix.html",
+    "href": "appendix.html",
+    "title": "Appendix",
     "section": "",
-    "text": "Content for skills.qmd."
+    "text": "Home (index.qmd)\n\nResume (resume.qmd) — PDF download\n\nProjects (projects.qmd) — includes Firehouse Subs leadership case\n\nSkills (skills.qmd)\n\nLeadership (leadership.qmd) — detailed narrative\n\nContact (contact.qmd)\n\nAppendix (appendix.qmd) — this page\n\n\n\n\n# Render and preview\nquarto render\nquarto preview\n\n# Git init & first push\ngit init\ngit add .\ngit commit -m \"Initial multi-page portfolio\"\ngit branch -M main\ngit remote add origin https://github.com/&lt;your-username&gt;/&lt;your-repo&gt;.git\ngit push -u origin main\n\n# GitHub Pages publish\nquarto publish gh-pages\n# or\nquarto use gh-pages && git commit -am \"Enable gh-pages\" && git push\n\n\n\n\nAlt text for images; meaningful link names\nHeading hierarchy; keyboard-focus visible\nColor contrast verified for buttons/links\nAll navbar links tested\n\n\n\n\n\nPrompted an LLM to propose site structure and first-draft copy.\n\nPersonalized all duties to match actual work at Firehouse Subs.\n\nRemoved any invented metrics or claims; ensured authenticity.\nStyling suggestions vetted for readability and accessibility."
+  },
+  {
+    "objectID": "appendix.html#a.-site-map",
+    "href": "appendix.html#a.-site-map",
+    "title": "Appendix",
+    "section": "",
+    "text": "Home (index.qmd)\n\nResume (resume.qmd) — PDF download\n\nProjects (projects.qmd) — includes Firehouse Subs leadership case\n\nSkills (skills.qmd)\n\nLeadership (leadership.qmd) — detailed narrative\n\nContact (contact.qmd)\n\nAppendix (appendix.qmd) — this page"
+  },
+  {
+    "objectID": "appendix.html#b.-authoring-publish-commands",
+    "href": "appendix.html#b.-authoring-publish-commands",
+    "title": "Appendix",
+    "section": "",
+    "text": "# Render and preview\nquarto render\nquarto preview\n\n# Git init & first push\ngit init\ngit add .\ngit commit -m \"Initial multi-page portfolio\"\ngit branch -M main\ngit remote add origin https://github.com/&lt;your-username&gt;/&lt;your-repo&gt;.git\ngit push -u origin main\n\n# GitHub Pages publish\nquarto publish gh-pages\n# or\nquarto use gh-pages && git commit -am \"Enable gh-pages\" && git push"
+  },
+  {
+    "objectID": "appendix.html#c.-accessibility-checks",
+    "href": "appendix.html#c.-accessibility-checks",
+    "title": "Appendix",
+    "section": "",
+    "text": "Alt text for images; meaningful link names\nHeading hierarchy; keyboard-focus visible\nColor contrast verified for buttons/links\nAll navbar links tested"
+  },
+  {
+    "objectID": "appendix.html#d.-llm-planning-trail-summary",
+    "href": "appendix.html#d.-llm-planning-trail-summary",
+    "title": "Appendix",
+    "section": "",
+    "text": "Prompted an LLM to propose site structure and first-draft copy.\n\nPersonalized all duties to match actual work at Firehouse Subs.\n\nRemoved any invented metrics or claims; ensured authenticity.\nStyling suggestions vetted for readability and accessibility."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Have an opportunity or feedback? I’d love to hear from you.\n\nEmail: rupinderkaursandhu05@gmail.com\n\nLinkedIn: (add your profile link here)\n\nEmail me"
+  },
+  {
+    "objectID": "leadership.html",
+    "href": "leadership.html",
+    "title": "Leadership",
+    "section": "",
+    "text": "Opening Shift Leadership — Firehouse Subs, Tsawwassen\n\n\n\nOn-shift leadership at Firehouse Subs\n\n\nI lead the opening shift, ensuring the store is guest-ready and safe. My focus is on process discipline, clear delegation, and a welcoming front-of-house.\nResponsibilities - Execute the opening checklist end-to-end and document completion. - Verify food safety: labeling, storage, and temperature checks. - Coordinate team setup by station to reduce last-minute scrambling. - Own the POS at open; handle payment issues and keep the line moving. - Maintain presentation standards for subs and store appearance."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume / CV",
+    "section": "",
+    "text": "Rupinder Kaur\nMBA Program — UCW, Vancouver\nEmail: rupinderkaursandhu05@gmail.com"
+  },
+  {
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume / CV",
+    "section": "Experience",
+    "text": "Experience\n\nFirehouse Subs, Tsawwassen — Opening Shift Lead\n\nFood handling and preparation (meat slicing/weighing, ingredient prep, sandwich assembly).\nStore sanitation and organization; ensure food labeling and storage.\nPOS operation for orders and payments; end-of-shift cash reconciliation.\nMorning open via checklist; train/coordinate teammates on standards.\nMaintain consistent presentation and guest experience."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume / CV",
+    "section": "Education",
+    "text": "Education\n\nMBA — University Canada West (UCW), Vancouver"
+  },
+  {
+    "objectID": "resume.html#skills-selected",
+    "href": "resume.html#skills-selected",
+    "title": "Resume / CV",
+    "section": "Skills (selected)",
+    "text": "Skills (selected)\n\nCustomer service, Problem-solving, Teamwork, Time management, Reliability & punctuality\n\nPOS systems, cash handling, checklists, sanitation\n\nFood safety awareness, labeling, and presentation standards"
   }
 ]

@@ -67,8 +67,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -79,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/logo-placeholder.svg" alt="" class="navbar-logo">
+    <img src="./assets/images/logo-rk.svg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Rupinder Kaur — MBA Portfolio</span>
@@ -135,7 +137,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a>
+  <ul class="collapse">
+  <li><a href="#quick-links" id="toc-quick-links" class="nav-link" data-scroll-target="#quick-links">Quick Links</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -161,12 +166,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<p>I’m <strong>Rupinder Kaur</strong>, an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen.</p>
-<p>Navigate using the menu above to explore my resume, projects, skills, leadership, and appendix.</p>
+<div class="hero">
+<h1>
+MBA Candidate • Shift Lead • Customer-Obsessed
+</h1>
+<p class="lead">
+I’m <strong>Rupinder Kaur</strong>, an MBA student at UCW (Vancouver) and an opening shift lead at Firehouse Subs, Tsawwassen. I thrive in fast-paced environments where teamwork, process discipline, and great service matter.
+</p>
+<p>
+<a class="btn btn-gradient" href="./resume.html">View Resume</a> <a class="btn btn-outline-dark" href="./projects.html">See Projects</a>
+</p>
+</div>
+<section id="highlights" class="level2">
+<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
+<ul>
+<li>Opening <strong>Shift Lead</strong> trusted with checklist-based store open, food safety, and cash reconciliation.</li>
+<li>Hands-on <strong>food handling &amp; preparation</strong>, <strong>POS</strong> operation, and <strong>front-of-house leadership</strong>.</li>
+<li>Core strengths: <strong>customer service</strong>, <strong>problem solving</strong>, <strong>time management</strong>, and <strong>reliability</strong>.</li>
+</ul>
+<section id="quick-links" class="level3">
+<h3 class="anchored" data-anchor-id="quick-links">Quick Links</h3>
+<p><span class="badge-soft">Resume</span> <span class="badge-soft">Leadership</span> <span class="badge-soft">Projects</span> <span class="badge-soft">Skills</span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -587,4 +610,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

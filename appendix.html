@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -67,8 +102,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -79,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/logo-placeholder.svg" alt="" class="navbar-logo">
+    <img src="./assets/images/logo-rk.svg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Rupinder Kaur — MBA Portfolio</span>
@@ -135,7 +172,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#appendix-website-page" id="toc-appendix-website-page" class="nav-link active" data-scroll-target="#appendix-website-page">Appendix (Website Page)</a></li>
+  <li><a href="#appendix-site-map-drafts-command-log-website-copy" id="toc-appendix-site-map-drafts-command-log-website-copy" class="nav-link active" data-scroll-target="#appendix-site-map-drafts-command-log-website-copy">Appendix — Site Map, Drafts &amp; Command Log (Website Copy)</a>
+  <ul class="collapse">
+  <li><a href="#a.-site-map" id="toc-a.-site-map" class="nav-link" data-scroll-target="#a.-site-map">A. Site Map</a></li>
+  <li><a href="#b.-authoring-publish-commands" id="toc-b.-authoring-publish-commands" class="nav-link" data-scroll-target="#b.-authoring-publish-commands">B. Authoring &amp; Publish Commands</a></li>
+  <li><a href="#c.-accessibility-checks" id="toc-c.-accessibility-checks" class="nav-link" data-scroll-target="#c.-accessibility-checks">C. Accessibility &amp; Checks</a></li>
+  <li><a href="#d.-llm-planning-trail-summary" id="toc-d.-llm-planning-trail-summary" class="nav-link" data-scroll-target="#d.-llm-planning-trail-summary">D. LLM Planning Trail (Summary)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -161,12 +204,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="appendix-website-page" class="level1">
-<h1>Appendix (Website Page)</h1>
-<p>This appendix page provides details of the project structure, commands, and LLM drafting trail.</p>
-<p>See the full submission copy of Appendix.md in the <strong>submission/</strong> folder for grading.</p>
+<section id="appendix-site-map-drafts-command-log-website-copy" class="level1">
+<h1>Appendix — Site Map, Drafts &amp; Command Log (Website Copy)</h1>
+<section id="a.-site-map" class="level2">
+<h2 class="anchored" data-anchor-id="a.-site-map">A. Site Map</h2>
+<ul>
+<li>Home (index.qmd)<br>
+</li>
+<li>Resume (resume.qmd) — PDF download<br>
+</li>
+<li>Projects (projects.qmd) — includes Firehouse Subs leadership case<br>
+</li>
+<li>Skills (skills.qmd)<br>
+</li>
+<li>Leadership (leadership.qmd) — detailed narrative<br>
+</li>
+<li>Contact (contact.qmd)<br>
+</li>
+<li>Appendix (appendix.qmd) — this page</li>
+</ul>
+</section>
+<section id="b.-authoring-publish-commands" class="level2">
+<h2 class="anchored" data-anchor-id="b.-authoring-publish-commands">B. Authoring &amp; Publish Commands</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render and preview</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Git init &amp; first push</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial multi-page portfolio"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/<span class="op">&lt;</span>your-username<span class="op">&gt;</span>/<span class="op">&lt;</span>your-repo<span class="op">&gt;</span>.git</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># GitHub Pages publish</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> use gh-pages <span class="kw">&amp;&amp;</span> <span class="fu">git</span> commit <span class="at">-am</span> <span class="st">"Enable gh-pages"</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="c.-accessibility-checks" class="level2">
+<h2 class="anchored" data-anchor-id="c.-accessibility-checks">C. Accessibility &amp; Checks</h2>
+<ul>
+<li>Alt text for images; meaningful link names</li>
+<li>Heading hierarchy; keyboard-focus visible</li>
+<li>Color contrast verified for buttons/links</li>
+<li>All navbar links tested</li>
+</ul>
+</section>
+<section id="d.-llm-planning-trail-summary" class="level2">
+<h2 class="anchored" data-anchor-id="d.-llm-planning-trail-summary">D. LLM Planning Trail (Summary)</h2>
+<ul>
+<li>Prompted an LLM to propose site structure and first-draft copy.<br>
+</li>
+<li>Personalized all duties to match actual work at Firehouse Subs.<br>
+</li>
+<li>Removed any invented metrics or claims; ensured authenticity.</li>
+<li>Styling suggestions vetted for readability and accessibility.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -587,4 +685,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
