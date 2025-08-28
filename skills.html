@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -40,11 +41,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -66,45 +67,80 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/images/logo-rk.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Rupinder Kaur — MBA Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./skills.html" aria-current="page"> 
+<span class="menu-text">Skills</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./leadership.html"> 
+<span class="menu-text">Leadership</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#core-interpersonal" id="toc-core-interpersonal" class="nav-link active" data-scroll-target="#core-interpersonal">Core Interpersonal</a></li>
+  <li><a href="#operations-tools" id="toc-operations-tools" class="nav-link" data-scroll-target="#operations-tools">Operations &amp; Tools</a></li>
+  <li><a href="#certifications-currenttarget" id="toc-certifications-currenttarget" class="nav-link" data-scroll-target="#certifications-currenttarget">Certifications (current/target)</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<header class="site-header">
-  <div class="inner">
-    <div class="brand">
-      <div class="badge">RK</div>
-      <div class="title">Rupinder Kaur — MBA Portfolio</div>
-    </div>
-    <nav class="circle-nav">
-      <a href="index.html" class="circle c-green" data-page="index.html">Home</a>
-      <a href="resume.html" class="circle c-green" data-page="resume.html">Resume</a>
-      <a href="projects.html" class="circle c-orange" data-page="projects.html">Projects</a>
-      <a href="leadership.html" class="circle c-blue" data-page="leadership.html">Leadership</a>
-      <a href="skills.html" class="circle c-gray" data-page="skills.html">Skills</a>
-      <a href="contact.html" class="circle c-gray" data-page="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-<script>
-  document.addEventListener('DOMContentLoaded', function(){
-    const path = location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.circle-nav .circle').forEach(a => {
-      if (a.dataset.page === path) a.classList.add('active');
-    });
-  });
-</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -125,28 +161,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="card">
-<h3 class="anchored">
-Core Interpersonal
-</h3>
+<section id="core-interpersonal" class="level2">
+<h2 class="anchored" data-anchor-id="core-interpersonal">Core Interpersonal</h2>
 <ul>
-<li>
-Exceptional customer service, problem-solving, teamwork, time management, reliability &amp; punctuality
+<li>Exceptional customer service<br>
 </li>
+<li>Problem-solving and adaptability<br>
+</li>
+<li>Team collaboration and communication<br>
+</li>
+<li>Time management<br>
+</li>
+<li>Reliability and punctuality</li>
 </ul>
-</div>
-<div class="card" style="margin-top:1rem;">
-<h3 class="anchored">
-Operations &amp; Tools
-</h3>
+</section>
+<section id="operations-tools" class="level2">
+<h2 class="anchored" data-anchor-id="operations-tools">Operations &amp; Tools</h2>
 <ul>
-<li>
-POS systems, cash handling, prep &amp; presentation standards, sanitation &amp; labeling, checklist-driven operations
+<li>POS systems (order entry, payment, receipts)<br>
 </li>
+<li>Cash handling and reconciliation<br>
+</li>
+<li>Food prep and presentation standards<br>
+</li>
+<li>Sanitation, labeling, and storage practices<br>
+</li>
+<li>Opening/closing <strong>checklists</strong> and store readiness</li>
 </ul>
-</div>
+</section>
+<section id="certifications-currenttarget" class="level2">
+<h2 class="anchored" data-anchor-id="certifications-currenttarget">Certifications (current/target)</h2>
+<ul>
+<li>FoodSafe Level 1 (if applicable)<br>
+</li>
+<li>First Aid / CPR (if applicable)</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -566,4 +618,5 @@ POS systems, cash handling, prep &amp; presentation standards, sanitation &amp; 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
